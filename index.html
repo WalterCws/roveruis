@@ -1,42 +1,50 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>ROVERUIS ROBO PARKING</title> 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script language="javascript">
 
- <style>
-div.parte{
-float: left;
-width: 48%;
-height: 100%;
+<!--
+
+function updateImage() {
+
+   obj = document.imagename;
+
+   obj.src = obj.src + "?" + Math.random();
+
+   //Following statement sets the delay before the function will
+
+   //call itself again (in milliseconds)
+
+   setTimeout("updateImage()",5000);
+
 }
-</style>
- 
+
+//-->
+
+</script>
+
+
+
+<head>
+
+<title>Refreshing an image</title>
+
 </head>
-<body>
-</style>
-<body>
-<div class="parte">
-Parte 1
-<br>
-</br>
-<iframe width="600" height="600" frameborder="0" src="https://app.ubidots.com/ubi/public/getdashboard/8CriGtFgJ5ypO6rH8Xn1Dhsom5w"></iframe>
-</div>
-</div>
-<div class="parte">
-Parte 2
-<br>
-</br>
-<script src=https://www.ustream.tv/embed/11211112?html5ui" type="text/javascript"></script>
-<iframe src="https://www.ustream.tv/embed/11211112?html5ui" frameborder="no" width="480" height="270"></iframe></div>
-<div class="parte">
-Parte 3
-<br>
-</br>
-<FONT FACE="impact" SIZE=6 COLOR="red">
- En la siguiente paguina web se visualiza la estacion meteorologia que lleva el rober</FONT>
-<img id="myImage" src="roveruis/LogoRover_UIS.png" alt="Mountain View" style="width:304px;height:228px;">
- </div>
+
+
+
+<body onload="updateImage()">
+
+<p>Welcome to my web-cam, marvel as the image refreshes while the 
+
+rest of the page does not!</p>
+
+
+
+<img src="roveruis/LogoRover_UIS.png" name="imagename">
+
+
+
 </body>
-</html> 
+
+</html>
