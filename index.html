@@ -35,7 +35,18 @@ Parte 3
 </br>
 <FONT FACE="impact" SIZE=6 COLOR="red">
  En la siguiente paguina web se visualiza la estacion meteorologia que lleva el rober</FONT>
-<img src="roveruis/LogoRover_UIS.png" alt="Mountain View" style="width:304px;height:228px;">
+ <script> 
+ var myImageElement = document.getElementById('myImage');
+myImageElement.src = 'roveruis/LogoRover_UIS.png' + Math.random();
+
+setInterval(function() {
+    var myImageElement = document.getElementById('myImage');
+    myImageElement.src = 'roveruis/LogoRover_UIS.png' + Math.random();
+    console.log(myImageElement);
+}, 10);
+</script>
+
+<img id="myImage" src="roveruis/LogoRover_UIS.png" alt="Mountain View" style="width:304px;height:228px;">
  </div>
 </body>
 </html>
