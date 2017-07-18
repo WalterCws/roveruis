@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id = "milienzo" width="450px" height="500px" style="border: 1px solid #000000;"></canvas>
+	<script type ="text/javascript">
+		var lienzo = document.getElementById('milienzo');
+        var contexto = lienzo.getContext('2d');
+
+		contexto.beginPath();
+		contexto.lineWidth = 20;
+		contexto.strokeStyle = "rgb(0,64,64)";;
+		contexto.moveTo(225, 50);
+		contexto.lineTo(225, 400);
+		contexto.lineCap = 'round';
+		contexto.stroke();
+
+		contexto.beginPath();
+        for (i=0;i<=488;i+=15){
+          contexto.fillStyle = "rgb(0,223,0)";
+          contexto.fillRect(0,i,60,14);
+         }
+
+        for (i=50;i<=382;i+=15){
+          contexto.strokeStyle ='green';
+          contexto.fillRect(155,i,60,14);
+         }
+		
+		for (i=50;i<=382;i+=15){
+          contexto.strokeStyle ='green';
+          contexto.fillRect(235,i,60,14);
+         }
+
+        for (i=0;i<=460;i+=18){
+          contexto.strokeStyle ='green';
+          contexto.fillRect(390,i,60,16);
+         }
+
+        for (i=282;i<=373;i+=17){
+          contexto.strokeStyle ='green';
+          contexto.fillRect(i,440,16,60);
+         }
+         contexto.stroke();
+		
+		
+
+	</script>
+
+</body>
+</html>
