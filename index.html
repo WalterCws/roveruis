@@ -1,58 +1,57 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>ROVERUIS ROBO PARKING</title> 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<head>
+		<title>ROVERUIS ROBO PARKING</title> 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilo.css"> 
+	</head>
 
- <style>
-div.parte{
-float: left;
-width: 48%;
-height: 100%;
-}
-</style>
- 
-</head>
-<body>
-</style>
-<body>
-<div class="parte">
-Parte 1
-<br>
-</br>
-<iframe width="600" height="600" frameborder="0" src="https://app.ubidots.com/ubi/public/getdashboard/8CriGtFgJ5ypO6rH8Xn1Dhsom5w"></iframe>
-</div>
-</div>
-<div class="parte">
-Parte 2
-<br>
-</br>
-<script src=https://www.ustream.tv/embed/11211112?html5ui" type="text/javascript"></script>
-<iframe src="https://www.ustream.tv/embed/11211112?html5ui" frameborder="no" width="480" height="270"></iframe></div>
-<div class="parte">
-Parte 3
-<br>
-</br>
-<FONT FACE="impact" SIZE=6 COLOR="red">
- En la siguiente paguina web se visualiza la estacion meteorologia que lleva el rober</FONT>
-<br>
-</br>
-                                      peroererooeroer
-<img src="images/Emoticons/LogoRover_UIS.png" style="width:304px;height:228px;">
- </div>
-</body>
+	<body>
+		<div class="header">
+			PERRROoo
+		</div>
+
+		<div class="main">			 
+			 <div class="ubidots">
+			 	<iframe  frameborder="0" src="https://app.ubidots.com/ubi/public/getdashboard/8CriGtFgJ5ypO6rH8Xn1Dhsom5w"></iframe>
+			 </div> 	
+			 
+		</div>
+
+		<div class="second">
+
+			<div class="stream">
+				<iframe src="SuperN.png"  id="camara" frameborder="0" scrolling="no"></iframe>
+			</div>
+
+			<div class="parqueadero">
+				<iframe src="parqueadero.png"  id="mapa" frameborder="0" scrolling="no"></iframe>
+			</div>
+
+			<script type='text/javascript'>
+				var iframe = document.getElementById('camara');
+				//var iframe2 = document.getElementById('mapa');
+				var refreshInterval = 5000; // Refresh every 30 seconds
+
+				setInterval(function() {
+				  iframe.src = iframe.src;
+				  //iframe2.src = iframe2.src;
+				}, refreshInterval); 
+			</script>
+
+		
+
+		 <div class="footer">
+			ROVERUIS
+		 </div>
+
+
+
+		
+	</body>
 </html> 
-
-
-
-
-
-
-
-
-
-
 
 
 
